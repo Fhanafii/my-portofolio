@@ -1,15 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.mjs
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx}', // Matches all files in the src folder
+    './src/app/**/*.{js,ts,jsx,tsx}', // Matches files specifically in src/app
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        pink: {
+          500: '#f252a2',
+          600: '#e84398',
+        },
       },
     },
   },
